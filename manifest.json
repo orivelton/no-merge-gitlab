@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "description": "no-merge",
   "browser_action":{
-     "default_icon": "src/img/tammy.png",
+     "default_icon": "src/img/gitlab.png",
      "popup": "index.html"
   },
   "content_scripts": [

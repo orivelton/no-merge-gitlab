@@ -9,12 +9,24 @@
     return doc.querySelector('.username').textContent.trim()
   }
 
-  const hideMergeButton = () => {
-    doc.querySelector('.mr-widget-body').style.display = 'none'
+  const hideMergeButton = condition => {
+    if( condition ) {
+      doc.querySelector('.mr-widget-body').style.display = 'none'
+    }
   }
-  
-  if( mergeOwner() !== loggedUser() ) {
-     hideMergeButton()
+
+  const quorum = () => {
+    const amount = document.querySelector('.award .counter').textContent
+    return parseInt(amount)
   }
+
+  const main = () => {
+    const youIsNotOwner = mergeOwner() !== loggedUser()
+    const withoutQuorum = quorum() < 3
+
+    hideMergeButton( youIsNotOwner || withoutQuorum )
+  }
+
+  main()
 
 })(document)
