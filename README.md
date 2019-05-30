@@ -1,2 +1,2 @@
-# no-merge-tammy
-no-merge-tammy
+# no-merge
+no-merge

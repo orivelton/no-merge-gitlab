@@ -1,11 +1,11 @@
 {
-  "name": "No Merge Tammy",
+  "name": "No Merge",
   "author": "Orivelton Cesar - https://github.com/orivelton",
   "version": "0.1.0",
   "manifest_version": 2,
-  "description": "no-merge-tammy",
+  "description": "no-merge",
   "browser_action":{
-     "default_icon": "src/img/tammy.png",
+     "default_icon": "src/img/gitlab.png",
      "popup": "index.html"
   },
   "content_scripts": [
