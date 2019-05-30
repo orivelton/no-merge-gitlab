@@ -1,0 +1,17 @@
+{
+  "name": "No Merge Tammy",
+  "author": "Orivelton Cesar - https://github.com/orivelton",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "no-merge-tammy",
+  "browser_action":{
+     "default_icon": "src/img/tammy.png",
+     "popup": "index.html"
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://gitlab.ir7.com.br/*"],
+        "js": ["src/js/hideButton.js"]
+      }
+  ]
+}
